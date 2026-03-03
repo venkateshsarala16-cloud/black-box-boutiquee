@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Box Boutique | Designer Boutique in Chennai</title>
+<meta name="description" content="Black Box Boutique – Premium designer sarees, bridal wear, party wear & custom fashion in Chennai. Bold. Elegant. Unforgettable.">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0e0e0e;
+    color:#f5f5f5;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:24px;
+    font-weight:700;
+    color:#d4af37;
+}
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    transition:0.3s;
+}
+nav a:hover{color:#d4af37}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1520975922284-8b456906c813?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 20px;
+}
+.hero-overlay{
+    background:rgba(0,0,0,0.65);
+    padding:40px;
+    border-radius:10px;
+}
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin-bottom:20px;
+}
+.hero p{
+    font-size:16px;
+    margin-bottom:30px;
+}
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:4px;
+    margin:5px;
+    transition:0.3s;
+}
+.btn:hover{background:#fff}
+
+/* SECTION */
+section{
+    padding:80px 8%;
+}
+.section-title{
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    margin-bottom:40px;
+    text-align:center;
+    color:#d4af37;
+}
+
+/* ABOUT */
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* COLLECTIONS */
+.collections{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.card{
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.4s;
+}
+.card img{
+    width:100%;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(212,175,55,0.3);
+}
+
+/* WHY US */
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    text-align:center;
+}
+.feature{
+    background:#1a1a1a;
+    padding:25px;
+    border-radius:10px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+.gallery img{
+    width:100%;
+    border-radius:8px;
+    transition:0.4s;
+}
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* TESTIMONIALS */
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.testimonial{
+    background:#1a1a1a;
+    padding:25px;
+    border-radius:10px;
+}
+
+/* CONTACT */
+.contact form{
+    display:flex;
+    flex-direction:column;
+    max-width:500px;
+    margin:auto;
+}
+.contact input, .contact textarea{
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+}
+.contact button{
+    padding:12px;
+    border:none;
+    background:#d4af37;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .about{
+        grid-template-columns:1fr;
+    }
+    nav{display:none}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Black Box Boutique</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#collections">Collections</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-overlay">
+        <h1>Unbox Your Signature Style</h1>
+        <p>Bold. Elegant. Designed to be noticed in every room you enter.</p>
+        <a href="#collections" class="btn">Explore Collection</a>
+        <a href="tel:09003072092" class="btn">Call Now</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Black Box Boutique</h2>
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1520975867597-0af37a22b6ef?auto=format&fit=crop&w=800&q=80">
+        <div>
+            <p>Located in Chennai, Black Box Boutique brings exclusive designer sarees, bridal collections, party wear, and custom creations crafted for confident women. We blend modern elegance with timeless tradition to create statement fashion.</p>
+        </div>
+    </div>
+</section>
+
+<section id="collections">
+    <h2 class="section-title">Our Collections</h2>
+    <div class="collections">
+        <div class="card">
+            <img src="https://www.suratifabric.com/blog/wp-content/uploads/2021/10/Banarasi-Silk-Designer-Saree-2.jpg">
+            <h3>Designer Sarees</h3>
+            <p>Luxury fabrics & handcrafted details.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.stylesgap.com/wp-content/uploads/2022/12/Marasim-Pretty-Bride-Faiza-Saqlain-Latest-Bridal-Dresses-Luxury-Designs-Collection-10.jpg">
+            <h3>Bridal Collection</h3>
+            <p>Make your big day unforgettable.</p>
+        </div>
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.fHsLLT-xoGrtHhmnMsA5owHaLJ?rs=1&pid=ImgDetMain&o=7&rm=3">
+            <h3>Party Wear</h3>
+            <p>Standout styles for every occasion.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2 class="section-title">Lookbook</h2>
+    <div class="gallery">
+        <img src="https://www.k4fashion.com/wp-content/uploads/2021/10/indian-bridal-dupatta-styles-12.jpg">
+        <img src="https://i.pinimg.com/originals/cc/58/60/cc58603a5f63bd8fd195a09def2fd7bf.jpg">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.LPnk8Gu8jGLgKQGtzPHV2AHaHa?w=2160&h=2160&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <img src="https://i.pinimg.com/736x/62/ac/4d/62ac4d10764c0adb010018417ed57520.jpg">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Visit Our Store</h2>
+    <p style="text-align:center;margin-bottom:20px;">
+        3, Lok Towers, Mount Poonamalle Main Road, Sabari Nagar, Mugalivakkam, Chennai – 600125<br>
+        Phone: <a href="tel:09003072092" style="color:#d4af37;">09003 072092</a><br>
+        Open – Closes 21:00
+    </p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Black Box Boutique | Designed to Be Noticed
+</footer>
+
+<a href="https://wa.me/919003072092" class="whatsapp">W</a>
+
+<section id="location" class="location">
+    <h2 class="section-title">Visit Our Store</h2>
+
+    <div style="text-align:center; margin-bottom:30px;">
+        <p>
+            3, Lok Towers, Mount Poonamalle Main Road,<br>
+            Sabari Nagar, Mugalivakkam,<br>
+            Chennai, Tamil Nadu 600125
+        </p>
+        <p>
+            Phone: <a href="tel:09003072092" style="color:#d4af37;">09003 072092</a><br>
+            Open – Closes 21:00
+        </p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=3+Lok+Towers+Mount+Poonamalle+Main+Road+Sabari+Nagar+Mugalivakkam+Chennai+600125" 
+           target="_blank" 
+           class="btn">Get Directions</a>
+
+        <a href="tel:09003072092" class="btn">Call Now</a>
+    </div>
+
+    <div style="width:100%; height:350px; border-radius:10px; overflow:hidden;">
+        <iframe 
+            src="https://www.google.com/maps?q=3, Lok Towers, Mount Poonamalle Main Road, Sabari Nagar, Mugalivakkam, Chennai, Tamil Nadu 600125&output=embed"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+<header>
+    <div class="logo">Black Box Boutique</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#collections">Collections</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Visit Store</a>
+        <a href="tel:09003072092" class="call-btn">Call: 09003 072092</a>
+    </nav>
+</header>
+
+</body>
+</html>
